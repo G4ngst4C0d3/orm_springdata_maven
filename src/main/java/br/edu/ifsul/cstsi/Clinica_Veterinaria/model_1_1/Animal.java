@@ -1,4 +1,4 @@
-package br.edu.ifsul.cstsi.orm_springdata_maven.model_1_1;
+package br.edu.ifsul.cstsi.Clinica_Veterinaria.model_1_1;
 
 public class Animal {
     private String nome_animal;

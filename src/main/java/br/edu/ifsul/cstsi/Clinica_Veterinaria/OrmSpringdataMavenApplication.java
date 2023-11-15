@@ -1,4 +1,4 @@
-package br.edu.ifsul.cstsi.orm_springdata_maven;
+package br.edu.ifsul.cstsi.Clinica_Veterinaria;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

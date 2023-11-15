@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>br.edu.ifsul.cstsi</groupId>
-    <artifactId>orm_springdata_maven</artifactId>
+    <artifactId>Clinica_Veterinaria</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>orm_springdata_maven</name>
     <description>orm_springdata_maven</description>

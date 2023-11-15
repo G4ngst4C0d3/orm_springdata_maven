@@ -1,4 +1,4 @@
-package br.edu.ifsul.cstsi.orm_springdata_maven;
+package br.edu.ifsul.cstsi.Clinica_Veterinaria;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

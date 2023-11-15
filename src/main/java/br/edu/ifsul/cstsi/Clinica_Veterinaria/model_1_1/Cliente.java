@@ -1,8 +1,6 @@
-package br.edu.ifsul.cstsi.orm_springdata_maven.model_1_1;
+package br.edu.ifsul.cstsi.Clinica_Veterinaria.model_1_1;
 
 import jakarta.persistence.*;
-
-import java.time.LocalDate;
 
 public class Cliente {
     @Id
