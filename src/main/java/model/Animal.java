@@ -1,9 +1,18 @@
-package br.edu.ifsul.cstsi.Clinica_Veterinaria.model_1_1;
+package model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class Animal {
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String nome_animal;
     private int idade_animal;
     private String sexo_animal;
+
 
     public Animal() {
     }
@@ -42,5 +51,13 @@ public class Animal {
     }
     public String conulta_Animal(){
         return nome_animal;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getId() {
+        return id;
     }
 }
