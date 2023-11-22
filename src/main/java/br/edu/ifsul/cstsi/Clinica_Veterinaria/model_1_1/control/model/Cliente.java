@@ -6,63 +6,19 @@ import jakarta.persistence.*;
 public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String nomeCliente;
-    private String enderecoCliente;
-    private  String telefoneCliente;
-    private  Long cepCliente;
-    private  String emailCliente;
+    @Column(name = "nome_cliente", nullable = false, length = 50)
+    private String nome_cliente;
+    @Column(name = "endereco_cliente", nullable = false, length = 255)
 
-    public Cliente() {
-    }
+    private String endereco_cliente;
+    @Column(name = "telefone_cliente", nullable = false, length = 50)
 
-    public Cliente(String nomeCliente, String enderecoCliente, String telefoneCliente, Long cepCliente, String emailCliente) {
-        this.nomeCliente = nomeCliente;
-        this.enderecoCliente = enderecoCliente;
-        this.telefoneCliente = telefoneCliente;
-        this.cepCliente = cepCliente;
-        this.emailCliente = emailCliente;
-    }
+    private  String telefone_cliente;
+    @Column(name = "cep_cliente", nullable = false, length = 50)
 
-    public void setNomeCliente(String nomeCliente) {
-        this.nomeCliente = nomeCliente;
-    }
+    private  Long cep_cliente;
+    @Column(name = "email_cliente", nullable = false, length = 50, unique = true)
 
-    public String getEnderecoCliente() {
-        return enderecoCliente;
-    }
+    private  String email_cliente;
 
-    public void setEnderecoCliente(String enderecoCliente) {
-        this.enderecoCliente = enderecoCliente;
-    }
-
-    public String getTelefoneCliente() {
-        return telefoneCliente;
-    }
-
-    public void setTelefoneCliente(String telefoneCliente) {
-        this.telefoneCliente = telefoneCliente;
-    }
-
-    public Long getCepCliente() {
-        return cepCliente;
-    }
-
-    public void setCepCliente(Long cepCliente) {
-        this.cepCliente = cepCliente;
-    }
-
-    public String getEmailCliente() {
-        return emailCliente;
-    }
-
-    public void setEmailCliente(String emailCliente) {
-        this.emailCliente = emailCliente;
-    }
-    public int registrarCliente(){
-
-        return 0;
-    }
-    public String  consultarCliente(){
-        return this.nomeCliente;
-    }
 }
