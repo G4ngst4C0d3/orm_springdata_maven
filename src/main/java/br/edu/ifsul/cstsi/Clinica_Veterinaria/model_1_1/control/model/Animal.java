@@ -13,5 +13,7 @@ public class Animal {
     private String nome_animal;
     private int idade_animal;
     private String sexo_animal;
-
+    @ManyToOne
+    @JoinColumn(name = "cliente_id", referencedColumnName = "id")
+    private Cliente cliente;
 }
