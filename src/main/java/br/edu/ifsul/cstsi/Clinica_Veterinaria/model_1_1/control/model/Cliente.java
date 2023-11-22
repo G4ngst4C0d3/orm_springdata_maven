@@ -1,7 +1,8 @@
-package model;
+package br.edu.ifsul.cstsi.Clinica_Veterinaria.model_1_1.control.model;
 
 import jakarta.persistence.*;
-
+@Entity
+@Table(name = "clientes")
 public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
