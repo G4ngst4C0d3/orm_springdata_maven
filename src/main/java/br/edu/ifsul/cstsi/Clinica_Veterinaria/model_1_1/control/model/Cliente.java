@@ -23,7 +23,7 @@ public class Cliente {
     private  Long cep_cliente;
 
     private  String email_cliente;
-    @OneToMany(mappedBy = "cliente")
 
+    @OneToMany
     private List <Animal> animais;
 }
