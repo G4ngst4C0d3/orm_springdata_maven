@@ -16,6 +16,7 @@ public class Animal {
     private String nome_animal;
     private int idade_animal;
     private String sexo_animal;
+
     @OneToMany(mappedBy = "animal")
     private List<Tratamento> tratamentos;
 

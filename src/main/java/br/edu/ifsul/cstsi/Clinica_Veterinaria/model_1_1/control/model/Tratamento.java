@@ -20,4 +20,7 @@ public class Tratamento {
     @JoinColumn(name = "animais", referencedColumnName = "id")
     private Animal animal;
 
+    @OneToMany(mappedBy = "tratamento")
+    private List <Consulta> consultas;
+
 }
