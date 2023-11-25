@@ -1,4 +1,4 @@
-package br.edu.ifsul.cstsi.Clinica_Veterinaria.model_1_1.control.model;
+package model;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -15,14 +15,15 @@ public class Cliente {
     private Long id;
     private String nome_cliente;
 
-    private String endereco_cliente;
-
     private  String telefone_cliente;
 
 
     private  Long cep_cliente;
 
     private  String email_cliente;
+
+    @Embedded
+    private EnderecoCliente endereco_cliente;
 
     @OneToMany
     private List <Animal> animais;

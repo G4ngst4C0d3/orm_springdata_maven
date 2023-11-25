@@ -1,4 +1,4 @@
-package br.edu.ifsul.cstsi.Clinica_Veterinaria;
+package br.edu.ifsul.cstsi.clinica_veterinaria;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

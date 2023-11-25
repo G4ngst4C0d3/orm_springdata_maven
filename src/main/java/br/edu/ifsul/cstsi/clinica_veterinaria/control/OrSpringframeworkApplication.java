@@ -1,4 +1,4 @@
-package br.edu.ifsul.cstsi.Clinica_Veterinaria.model_1_1.control;
+package br.edu.ifsul.cstsi.clinica_veterinaria.control;
 
 
 import org.springframework.boot.SpringApplication;
@@ -12,7 +12,7 @@ public class OrSpringframeworkApplication {
     public static void main(String[] args) {
 
         SpringApplication.run(OrSpringframeworkApplication.class, args);
-
+        System.out.println("Hello World");
     }
 
 }

@@ -1,5 +1,6 @@
-package br.edu.ifsul.cstsi.Clinica_Veterinaria.model_1_1.control.model;
+package model;
 
+import model.Consulta;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

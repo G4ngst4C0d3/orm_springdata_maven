@@ -1,4 +1,4 @@
-package br.edu.ifsul.cstsi.Clinica_Veterinaria.model_1_1.control.model;
+package model;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -20,5 +20,7 @@ public class Animal {
     @OneToMany(mappedBy = "animal")
     private List<Tratamento> tratamentos;
 
-
+    @ManyToOne
+    @JoinColumn(name = "especies",referencedColumnName = "id")
+    private Especie especie;
 }

@@ -1,6 +1,8 @@
-package br.edu.ifsul.cstsi.Clinica_Veterinaria.model_1_1.control.model;
+package model;
 import jakarta.persistence.*;
 import lombok.*;
+import model.Animal;
+import model.Consulta;
 
 import java.time.LocalDate;
 import java.util.List;
