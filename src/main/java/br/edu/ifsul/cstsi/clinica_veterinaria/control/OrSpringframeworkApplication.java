@@ -12,7 +12,6 @@ public class OrSpringframeworkApplication {
     public static void main(String[] args) {
 
         SpringApplication.run(OrSpringframeworkApplication.class, args);
-        System.out.println("Hello World");
     }
 
 }

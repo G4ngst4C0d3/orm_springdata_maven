@@ -13,13 +13,17 @@ import java.util.List;
 @Entity(name = "Veterinario")
 @Table(name = "veterinarios")
 public class Veterinario {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "nome_vet", nullable = false, length = 50)
     private String nome_vet;
-    private String endereco_vet;
+
+    @Column(name = "tel_vet", nullable = false, length = 50)
     private String tel_vet;
 
+    @Embedded
+    private EnderecoVeterinario enderecoveterinario;
 
     @OneToMany
     private List<Consulta> consultas;

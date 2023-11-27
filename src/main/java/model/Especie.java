@@ -15,6 +15,8 @@ import java.util.List;
 public class Especie {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Long id;
+
+    @Column(name = "nome_especie", nullable = false, length = 50)
     private String nome_especie;
 
     @OneToMany

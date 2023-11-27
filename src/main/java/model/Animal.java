@@ -13,8 +13,14 @@ import java.util.List;
 public class Animal {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "nome_animal", nullable = false, length = 50)
     private String nome_animal;
+
+    @Column(name = "idade_animal", nullable = false)
     private int idade_animal;
+
+    @Column(name = "sexo_animal", nullable = false)
     private String sexo_animal;
 
     @OneToMany(mappedBy = "animal")
