@@ -1,6 +1,6 @@
 package model;
 
-import model.Animal;
+import br.edu.ifsul.cstsi.clinica_veterinaria.animais.Animal;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

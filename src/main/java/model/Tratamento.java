@@ -1,8 +1,7 @@
 package model;
 import jakarta.persistence.*;
 import lombok.*;
-import model.Animal;
-import model.Consulta;
+import br.edu.ifsul.cstsi.clinica_veterinaria.animais.Animal;
 
 import java.time.LocalDate;
 import java.util.List;
