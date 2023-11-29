@@ -3,7 +3,6 @@ package br.edu.ifsul.cstsi.clinica_veterinaria.clientes;
 import jakarta.persistence.*;
 import lombok.*;
 import br.edu.ifsul.cstsi.clinica_veterinaria.animais.Animal;
-import model.EnderecoCliente;
 
 import java.util.List;
 
@@ -19,7 +18,7 @@ public class Cliente {
     private String nome_cliente;
 
     @Column(name = "telefone_cliente", nullable = false, length = 50)
-    private  String telefone_cliente;
+    private  Integer telefone_cliente;
 
     @Column(name = "cep_cliente", nullable = false, length = 50)
     private  Long cep_cliente;
