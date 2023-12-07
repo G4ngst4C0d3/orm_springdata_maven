@@ -19,6 +19,6 @@ public class Especie {
     @Column(name = "nome_especie", nullable = false, length = 50)
     private String nome_especie;
 
-    @OneToMany
+    @OneToMany(mappedBy = "especie")
     private List <Animal> animais;
 }

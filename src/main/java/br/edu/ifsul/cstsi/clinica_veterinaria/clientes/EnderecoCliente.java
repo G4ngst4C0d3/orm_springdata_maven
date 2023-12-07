@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 @Data
 @Embeddable
 public class EnderecoCliente {
-        private Long id;
 
         private String rua_cliente;
 

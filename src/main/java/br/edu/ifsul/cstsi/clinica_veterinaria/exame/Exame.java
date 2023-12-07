@@ -17,6 +17,6 @@ public class Exame {
     private String desc_exame;
 
     @ManyToOne
-    @JoinColumn(name = "consultas", referencedColumnName = "id")
+    @JoinColumn(name = "consultas_id", referencedColumnName = "id")
     private Consulta consulta;
 }

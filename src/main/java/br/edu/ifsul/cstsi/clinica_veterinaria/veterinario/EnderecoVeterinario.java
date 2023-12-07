@@ -5,7 +5,6 @@ import jakarta.persistence.Embeddable;
 
 @Embeddable
 public class EnderecoVeterinario {
-    private Long id;
 
     private String rua_vet;
 

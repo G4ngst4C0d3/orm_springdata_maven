@@ -10,7 +10,7 @@ import java.util.List;
 @AllArgsConstructor
 @Data
 @Entity(name = "Cliente")
-@Table(name = "Clientes")
+@Table(name = "clientes")
 public class Cliente {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -29,8 +29,8 @@ public class Cliente {
     @Embedded
     private EnderecoCliente endereco_cliente;
 
-    @OneToMany
-    private List <Animal> animais;
+    @OneToMany(mappedBy = "cliente")
+    private List<Animal> animais;
 
     @Override
     public String toString() {

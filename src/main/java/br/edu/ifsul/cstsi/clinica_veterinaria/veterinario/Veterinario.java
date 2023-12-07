@@ -26,6 +26,6 @@ public class Veterinario {
     @Embedded
     private EnderecoVeterinario enderecoveterinario;
 
-    @OneToMany
+    @OneToMany(mappedBy = "veterinario")
     private List<Consulta> consultas;
 }

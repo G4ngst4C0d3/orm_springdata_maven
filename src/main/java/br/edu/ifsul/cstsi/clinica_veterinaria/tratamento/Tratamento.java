@@ -19,7 +19,7 @@ public class Tratamento {
     private LocalDate data_final;
 
     @ManyToOne
-    @JoinColumn(name = "animais", referencedColumnName = "id")
+    @JoinColumn(name = "animais_id", referencedColumnName = "id")
     private Animal animal;
 
     @OneToMany(mappedBy = "tratamento")

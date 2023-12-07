@@ -1,5 +1,6 @@
 package br.edu.ifsul.cstsi.clinica_veterinaria.animais;
 
+import br.edu.ifsul.cstsi.clinica_veterinaria.clientes.Cliente;
 import jakarta.persistence.*;
 import lombok.*;
 import br.edu.ifsul.cstsi.clinica_veterinaria.tratamento.Tratamento;
@@ -28,6 +29,10 @@ public class Animal {
     private List<Tratamento> tratamentos;
 
     @ManyToOne
-    @JoinColumn(name = "especies",referencedColumnName = "id")
+    @JoinColumn(name = "especie_id",referencedColumnName = "id")
     private Especie especie;
+
+    @ManyToOne
+    @JoinColumn(name= "cliente_id", referencedColumnName = "id")
+    private Cliente cliente;
 }

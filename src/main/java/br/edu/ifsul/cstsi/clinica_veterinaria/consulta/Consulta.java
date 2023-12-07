@@ -23,13 +23,13 @@ public class Consulta {
     private String historico;
 
     @ManyToOne
-    @JoinColumn(name = "tratamentos", referencedColumnName = "id")
+    @JoinColumn(name = "tratamentos_id", referencedColumnName = "id")
     private Tratamento tratamento;
 
     @ManyToOne
-    @JoinColumn(name = "veterinarios",referencedColumnName = "id")
+    @JoinColumn(name = "veterinarios_id",referencedColumnName = "id")
     private Veterinario veterinario;
 
-    @OneToMany
+    @OneToMany(mappedBy = "consulta")
     private List<Exame> exames;
 }
