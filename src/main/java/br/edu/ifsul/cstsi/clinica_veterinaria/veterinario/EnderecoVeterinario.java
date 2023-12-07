@@ -1,4 +1,4 @@
-package model;
+package br.edu.ifsul.cstsi.clinica_veterinaria.veterinario;
 
 
 import jakarta.persistence.Embeddable;

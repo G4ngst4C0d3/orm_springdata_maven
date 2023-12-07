@@ -16,6 +16,7 @@ public class ClienteService {
     public List<Cliente> getClientes(){
         return  rep.findAll();
     }
+
     public Cliente getClienteById(Long id) {
         Optional<Cliente> optional = rep.findById(id);
         if(optional.isPresent()) {
@@ -45,6 +46,7 @@ public class ClienteService {
         }
     }
     public void delete(Long id) {
+
         rep.deleteById(id);
     }
 }

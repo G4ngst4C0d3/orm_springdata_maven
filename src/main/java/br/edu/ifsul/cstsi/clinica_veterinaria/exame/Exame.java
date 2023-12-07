@@ -1,6 +1,6 @@
-package model;
+package br.edu.ifsul.cstsi.clinica_veterinaria.exame;
 
-import model.Consulta;
+import br.edu.ifsul.cstsi.clinica_veterinaria.consulta.Consulta;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

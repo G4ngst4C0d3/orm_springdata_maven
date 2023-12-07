@@ -1,9 +1,10 @@
-package model;
+package br.edu.ifsul.cstsi.clinica_veterinaria.veterinario;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import br.edu.ifsul.cstsi.clinica_veterinaria.consulta.Consulta;
 
 import java.util.List;
 

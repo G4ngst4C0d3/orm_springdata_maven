@@ -1,4 +1,5 @@
-package model;
+package br.edu.ifsul.cstsi.clinica_veterinaria.tratamento;
+import br.edu.ifsul.cstsi.clinica_veterinaria.consulta.Consulta;
 import jakarta.persistence.*;
 import lombok.*;
 import br.edu.ifsul.cstsi.clinica_veterinaria.animais.Animal;

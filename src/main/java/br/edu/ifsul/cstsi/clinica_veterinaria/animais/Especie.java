@@ -1,4 +1,4 @@
-package model;
+package br.edu.ifsul.cstsi.clinica_veterinaria.animais;
 
 import br.edu.ifsul.cstsi.clinica_veterinaria.animais.Animal;
 import jakarta.persistence.*;

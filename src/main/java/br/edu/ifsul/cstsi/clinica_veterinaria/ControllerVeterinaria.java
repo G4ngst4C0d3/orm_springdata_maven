@@ -11,7 +11,7 @@ public class ControllerVeterinaria {
             System.out.println("\n------- Clínica Veterinária -------");
             System.out.println(
                     """
-                            1.
+                            1.Manter Cliente
                             2.
                             3.
                             4.

@@ -2,8 +2,7 @@ package br.edu.ifsul.cstsi.clinica_veterinaria.animais;
 
 import jakarta.persistence.*;
 import lombok.*;
-import model.Especie;
-import model.Tratamento;
+import br.edu.ifsul.cstsi.clinica_veterinaria.tratamento.Tratamento;
 
 import java.util.List;
 
