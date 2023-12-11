@@ -51,9 +51,9 @@ public class ClienteController {
         System.out.print("Digite o nome do cliente: ");
         cliente.setNome_cliente(input.nextLine());
         System.out.println("Telefone: ");
-        cliente.setTelefone_cliente(Integer.valueOf(input.nextLine()));
+        cliente.setTelefone_cliente(input.nextInt());
         System.out.println("Cep: ");
-        cliente.setCep_cliente(Long.valueOf(input.nextLine()));
+        cliente.setCep_cliente(input.nextInt());
         System.out.println("Email: ");
         cliente.setEmail_cliente(input.nextLine());
         System.out.println("cliente salvo com sucesso:" + clienteService.insert(cliente));
@@ -86,7 +86,7 @@ public class ClienteController {
                     if (input.nextInt() == 0) {
                         input.nextLine();
                         System.out.print("Digite o novo CEP do cliente: ");
-                        cliente.setCep_cliente(Long.valueOf(input.nextLine()));
+                        cliente.setCep_cliente(input.nextInt());
                     }
                     System.out.println("Telefone : " + cliente.getTelefone_cliente());
                     System.out.print("Alterar? (0-sim/1-não) ");
@@ -148,6 +148,7 @@ public class ClienteController {
         }while (opcao != 0);
     }
     private static void selectAllclientes(){
+
         System.out.println("\nLista de clientes cadastrados na Clínica Veterinária:\n" + clienteService.getClientes());
     }
     private static void buscarClientebyId(){

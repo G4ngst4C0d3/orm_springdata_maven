@@ -10,4 +10,6 @@ import java.util.Optional;
 public interface ClienteRepository extends JpaRepository<Cliente,Long> {
     @Query(value = "SELECT c FROM Cliente c where c.nome_cliente like ?1")
     List<Cliente> findByNome(String nome_cliente);
+
+    List<Cliente> findAllById();
 }

@@ -14,7 +14,7 @@ public class ClienteService {
     @Autowired
     private ClienteRepository rep;
     public List<Cliente> getClientes(){
-        return  rep.findAll();
+        return  rep.findAllById();
     }
 
     public Cliente getClienteById(Long id) {

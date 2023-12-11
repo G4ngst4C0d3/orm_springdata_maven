@@ -21,7 +21,7 @@ public class Cliente {
     private  Integer telefone_cliente;
 
 
-    private  Long cep_cliente;
+    private  Integer cep_cliente;
 
 
     private  String email_cliente;
@@ -37,7 +37,7 @@ public class Cliente {
         return "br.edu.ifsul.cstsi.clinica_veterinaria.clientes.Cliente{" +
                 "id=" + id +
                 ", nome_cliente='" + nome_cliente + '\'' +
-                ", telefone_cliente='" + telefone_cliente + '\'' +
+                ", telefone_cliente=" + telefone_cliente +
                 ", cep_cliente=" + cep_cliente +
                 ", email_cliente='" + email_cliente + '\'' +
                 ", endereco_cliente=" + endereco_cliente +
